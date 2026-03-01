@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Sorting Visualizer</h1>
+      <div class="hint">Pause/Resume, Step-by-step, Randomize, and easy algorithm extension</div>
+    </header>
+
+    <section class="controls">
+      <div class="group">
+        <div class="row">
+          <label for="algo">Algorithm</label>
+          <div class="val" id="status">Idle</div>
+        </div>
+        <select id="algo"></select>
+
+        <div class="row">
+          <label for="n">Elements</label>
+          <div class="val"><span id="nVal"></span></div>
+        </div>
+        <input id="n" type="range" min="10" max="120" step="1" />
+
+        <div class="row">
+          <label for="speed">Speed</label>
+          <div class="val"><span id="speedVal"></span> ms</div>
+        </div>
+        <input id="speed" type="range" min="0" max="120" step="1" />
+      </div>
+
+      <div class="group">
+        <div class="row">
+          <label>Array</label>
+          <div class="val" id="rangeInfo"></div>
+        </div>
+        <div class="btns">
+          <button id="randomize" class="btn-primary">Randomize</button>
+          <button id="nearlySorted">Nearly sorted</button>
+        </div>
+        <div class="btns">
+          <button id="reverse">Reverse</button>
+          <button id="toggleValues">Show values</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="row">
+          <label>Run</label>
+          <div class="val" id="runInfo"></div>
+        </div>
+        <div class="btns">
+          <button id="start" class="btn-primary">Start</button>
+          <button id="reset" class="btn-danger">Reset</button>
+        </div>
+        <div class="btns">
+          <button id="pause" class="btn-warn" disabled>Pause</button>
+          <button id="step" disabled>Step</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="row">
+          <label>Stats</label>
+          <div class="val">Live</div>
+        </div>
+        <div class="row"><div class="hint">Comparisons</div><div class="val" id="cmp">0</div></div>
+        <div class="row"><div class="hint">Swaps/Writes</div><div class="val" id="swp">0</div></div>
+        <div class="row"><div class="hint">Elapsed</div><div class="val" id="elapsed">0.0s</div></div>
+      </div>
+    </section>
+
+    <section class="viz">
+      <div class="stats">
+        <div class="legend">
+          <span class="tag"><span class="dot dot-bar"></span> element</span>
+          <span class="tag"><span class="dot dot-compare"></span> compare</span>
+          <span class="tag"><span class="dot dot-swap"></span> swap/write</span>
+          <span class="tag"><span class="dot dot-sorted"></span> sorted</span>
+        </div>
+        <div class="hint">Tip: Pause then use Step to advance one operation</div>
+      </div>
+
+      <div id="board" class="board" aria-label="Sorting visualization board"></div>
+      <div id="toast" class="toast"></div>
+    </section>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
