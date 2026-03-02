@@ -21,6 +21,17 @@ restore original
 
 [![Open Demo](link.svg)](https://alevyt.github.io/sorting-visualizer/)
 
+
+<p align="center">
+  <a href="https://alevyt.github.io/sorting-visualizer/">
+    <img src="link.svg" width="220" alt="Scan to open live demo">
+  </a>
+</p>
+
+<p align="center">
+  Scan to open live demo
+</p>
+
 ------------------------------------------------------------------------
 
 
