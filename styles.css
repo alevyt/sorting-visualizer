@@ -1,16 +1,61 @@
 :root {
   --bg: #0b0f17;
+  --bg-accent: #111a33;
+
   --panel: #111827;
   --panel2: #0f172a;
+
   --text: #e5e7eb;
   --muted: #9ca3af;
+
   --bar: #60a5fa;
   --compare: #fbbf24;
   --swap: #fb7185;
   --sorted: #34d399;
+
   --border: rgba(255, 255, 255, 0.08);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
   --radius: 14px;
+}
+
+:root[data-theme="light"] {
+  --bg: #f6f7fb;
+  --bg-accent: #e9eefc;
+
+  --panel: #ffffff;
+  --panel2: #f3f6ff;
+
+  --text: #0f172a;
+  --muted: #475569;
+
+  --bar: #2563eb;
+  --compare: #d97706;
+  --swap: #e11d48;
+  --sorted: #059669;
+
+  --border: rgba(15, 23, 42, 0.12);
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-ghost {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  padding: 9px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+:root[data-theme="light"] .btn-ghost {
+  background: rgba(15,23,42,0.04);
 }
 
 * { box-sizing: border-box; }
@@ -19,7 +64,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  background: radial-gradient(1200px 700px at 20% 0%, #111a33 0%, var(--bg) 55%);
+  background: radial-gradient(1200px 700px at 20% 0%, var(--bg-accent) 0%, var(--bg) 55%);
   color: var(--text);
 }
 
