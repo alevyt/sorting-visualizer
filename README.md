@@ -17,19 +17,26 @@ restore original
 
 ------------------------------------------------------------------------
 
+## App is available here:
+
+[![Open Demo](link.svg)](https://alevyt.github.io/sorting-visualizer/)
+
+------------------------------------------------------------------------
+
+
 ## Adding New Algorithms
 
-Step 1 --- Create file
+### Step 1 --- Create file
 
 src/algorithms/heap.js
 
-Step 2 --- Register algorithm
+### Step 2 --- Register algorithm
 
 import { defineAlgorithm } from "../core/registry.js";
 
 defineAlgorithm("heap", "Heap sort", function\* (arr) { // logic });
 
-Step 3 --- Yield operations
+### Step 3 --- Yield operations
 
 Compare yield { type: "compare", i: 0, j: 1 };
 
@@ -39,7 +46,7 @@ Write yield { type: "write", i: 0, value: 5 };
 
 Sorted yield { type: "markSorted", from: 0, to: 3 };
 
-Step 4 --- Import file
+### Step 4 --- Import file
 
 import "./algorithms/heap.js";
 
