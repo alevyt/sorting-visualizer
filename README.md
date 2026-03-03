@@ -19,8 +19,6 @@ restore original
 
 ## App is available here:
 
-[![Open Demo](link.svg)](https://alevyt.github.io/sorting-visualizer/)
-
 
 <p align="center">
   <a href="https://alevyt.github.io/sorting-visualizer/">
@@ -29,7 +27,7 @@ restore original
 </p>
 
 <p align="center">
-  Scan to open live demo
+  Scan to open live demo, or go [here](https://alevyt.github.io/sorting-visualizer/)
 </p>
 
 ------------------------------------------------------------------------
