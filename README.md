@@ -27,7 +27,7 @@ restore original
 </p>
 
 <p align="center">
-  Scan to open live demo, or go [here](https://alevyt.github.io/sorting-visualizer/)
+  Scan to open live demo, or go to (https://alevyt.github.io/sorting-visualizer/)
 </p>
 
 ------------------------------------------------------------------------
